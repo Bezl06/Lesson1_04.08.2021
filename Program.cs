@@ -59,7 +59,12 @@ namespace Lesson1
             System.Console.WriteLine($"AC+BC = {MathF.Abs(MathF.Abs(a-c)+MathF.Abs(b-c))}");
         }
         static void Zadacha3(float x1,float y1,float x2,float y2)=>System.Console.WriteLine($"результат = {MathF.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))}");
-        static void Zadacha4(int num)=>System.Console.WriteLine($"Резултат : {num.ToString()[1]}{num.ToString()[0]}");
+        static void Zadacha4(int num)
+        {
+            int res=(num%10)*10;
+            res+=num/10;
+            System.Console.WriteLine($"Результат {res}");
+        }
         static void Zadacha5(int seconds)=>System.Console.WriteLine($"Результат : {seconds/60}");
         static void Zadacha6(int days)=>System.Console.WriteLine($"Номер дня недели : {days%7}");
     }
